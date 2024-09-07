@@ -1,0 +1,30 @@
+mkdir name
+
+conda create --prefix ./env pandas numpy matplotlib scikit-learn
+
+To activate this environment, use
+#
+#     $ conda activate C:\Users\Test\projects\sample_project_1\env
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+to launch the notebook
+# jupyter notebook
+
+to close the notebook
+ctrl+c
+
+install seaborn:
+conda install seaborn
+
+To export env for another project:
+	go to the file directory: cd E:\Work\ML
+#	conda env export
+or
+#	conda env export > file.yml
+
+to create an enviroment from the yml file, deactivate the enviroment if you still running it:
+#	conda env create --prefix ./env -f E:\Work\ML\environment.yml
