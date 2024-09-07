@@ -1,0 +1,31 @@
+
+minikube start
+
+cd C:\Users\Test\projects\sample_project_1\Piplines
+
+-run the Pipeline Definition File:
+python define_kubeflow_pipeline.py
+
+
+kubectl port-forward -n kubeflow svc/ml-pipeline-ui 8080:80
+
+
+http://localhost:8080
+
+
+
+
+
+
+
+
+
+
+
+*If you’ve made changes to the Python scripts or 
+the Dockerfiles, remember to rebuild and push the 
+Docker images before running the pipeline.*
+
+docker build -t spike404/data_loading:latest .
+docker push spike404/data_loading:latest
+
